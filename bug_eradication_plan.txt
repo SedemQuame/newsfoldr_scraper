@@ -1,0 +1,31 @@
+The bug eradication plan is a set of actions that need to be taken, to make scrapers more efficient and get more data, relating to the various articles.
+
+1. Eonline Ghana
+==================
+a. The scraping script works very well, but it does not get all media embedded in certain parts of a given post. For example
+This post(https://www.eonlinegh.com/mzvee-breaks-lynx-jinx-bags-first-vgma-after-exit/) on eonline, about MzVee winning an award features numerous media sources, like an instagram Iframe, a photo and youtube link.
+Currently the script only returns the main photo and the youtube link.
+
+A possible strategy to fixing this problem will be to, search for all images in the man,i content area, and disregarding the structure, and also removing texts that might point to the picture at a later parts
+
+Another strategy would be to, directly collect all paragraphs, images and iframes, extract their contents and pass them into an array, such that when rendering on the UI, we just examine the string and use the appropriate component to render.
+
+
+2. Ghanafa
+====================
+The football association website gfa, has a treasure trove of information, but the script is currently returning information about, divisions, this information can be extended to gather other classifications of data. So far the scraping of article information is okay, i'm getting all article information, but the date extracted is currently a problem, this makes it quite difficult to sort date according to the date it was published.
+
+
+3. BrownGH 
+====================
+
+
+4. MyJoyOnline
+====================
+
+5. NewsGhana
+====================
+
+
+6. PeaceFM
+====================
